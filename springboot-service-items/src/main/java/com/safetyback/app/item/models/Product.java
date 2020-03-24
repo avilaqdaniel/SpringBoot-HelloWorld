@@ -1,6 +1,8 @@
 package com.safetyback.app.item.models;
 
+
 import java.util.Date;
+
 
 public class Product {
 	
@@ -8,8 +10,17 @@ public class Product {
 	private String name;
 	private Double price;
 	private Date createAt;
+	private Integer port;	
 	public Long getId() {
 		return id;
+	}
+	
+	
+	public Integer getPort() {
+		return port;
+	}
+	public void setPort(Integer port) {
+		this.port = port;
 	}
 	public void setId(Long id) {
 		this.id = id;
